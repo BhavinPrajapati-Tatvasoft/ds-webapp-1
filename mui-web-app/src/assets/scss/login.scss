@@ -1,0 +1,151 @@
+.login-wrapper {
+  min-height: 100vh;
+  background-color: $white;
+  .login-content {
+    padding: 20px 20px 20px 60px;
+    min-height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .login-left-content {
+    .MuiTypography-body1 {
+      font-size: 40px;
+      line-height: 60px;
+      color: $title;
+      padding-bottom: 8px;
+      font-weight: 500;
+    }
+    .MuiTypography-h1 {
+      color: $primaryMain;
+      padding-bottom: 8px;
+    }
+    .content-text {
+      max-width: 750px;
+      width: 100%;
+      padding-left: 50px;
+    }
+    .banner-img {
+      margin-left: 30px;
+      &.jobSeeker-banner {
+        max-width: 605px;
+      }
+      &.recruiter-banner {
+        max-width: 658px;
+      }
+    }
+  }
+  .login-form {
+    border: 1px solid $grey;
+    border-radius: 16px;
+    background-color: $white-v-1;
+    max-width: 435px;
+    width: 100%;
+    padding: 46px 40px;
+    margin: 0 auto;
+    .MuiTypography-h2 {
+      padding-bottom: 38px;
+    }
+    .seprator {
+      position: relative;
+      padding-bottom: 0;
+      margin: 30px 0;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: 1px;
+        background-color: $outline;
+        width: 100%;
+      }
+      .MuiTypography-caption {
+        font-size: 16px;
+        line-height: 24px;
+        position: relative;
+        background-color: $white-v-1;
+        padding: 0 16px;
+        z-index: 1;
+      }
+    }
+    .MuiButton-containedPrimary {
+      margin-bottom: 28px;
+    }
+    .sign-up-text {
+      color: $title;
+    }
+  }
+}
+
+/* Media Queries
+  ---------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 1535px) {
+  .login-wrapper {
+    .login-left-content {
+      .MuiTypography-body1 {
+        font-size: 32px;
+        line-height: 40px;
+      }
+      .content-text {
+        padding-left: 0;
+      }
+      .banner-img {
+        margin-left: 0;
+      }
+    }
+    .login-content {
+      padding: 40px;
+    }
+  }
+}
+@media (max-width: 1199px) {
+  .login-wrapper {
+    .login-form {
+      padding: 30px;
+      .MuiTypography-h2 {
+        padding-bottom: 24px;
+      }
+      .seprator {
+        margin: 20px 0;
+      }
+    }
+    .login-left-content {
+      .MuiTypography-body1 {
+        font-size: 26px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+@media (max-width: 899px) {
+  .login-wrapper {
+    .login-form {
+      padding: 24px 20px;
+      .MuiTypography-h2 {
+        padding-bottom: 20px;
+      }
+    }
+    .login-content {
+      padding: 20px;
+      min-height: calc(100vh - 63px);
+    }
+    .login-left-content {
+      .banner-img {
+        display: none;
+      }
+      .content-text {
+        max-width: 350px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .MuiTypography-body1 {
+        font-size: 22px;
+        line-height: 28px;
+      }
+    }
+  }
+}
+@media (max-width: 599px) {
+}
